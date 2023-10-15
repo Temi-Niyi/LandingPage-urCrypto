@@ -1,36 +1,20 @@
-const menuBtn = document.querySelector(".menuBtn");
 const menu = document.getElementById("menu");
-const loginButton = document.getElementById("login");
-const registerButton = document.getElementById("register");
-const buttonsContainer = document.getElementById("buttonsContainer");
+const menuBtn = document.querySelector(".menuBtn");
+const closeBtn = document.querySelector(".closeBtn");
 
-let menuVisible = false;
+menuBtn.addEventListener('click', () => {
+  menu.style.display = "flex";
+  closeBtn.style.display = "flex";
+  menuBtn.style.display = "none";
+})
 
-function adjustDisplay() {
-  if (window.innerWidth >= 768) {
-    menuBtn.style.display = "none";
-    loginButton.style.display = "inline-block";
-    registerButton.style.display = "inline-block";
-  } else {
-    menuBtn.style.display = "block";
-    loginButton.style.display = "none";
-    registerButton.style.display = "none";
-  }
+// close nav menu
+const closeNav = () => {
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "inline-block";
 }
 
-menuBtn.addEventListener("click", function () {
-  if (menuVisible) {
-    menu.style.display = "none";
-    menuBtn.textContent = "☰";
-  } else {
-    menu.style.display = "block";
-    menuBtn.textContent = "x";
-  }
-  menuVisible = !menuVisible;
-});
+closeBtn.addEventListener('click', closeNav)
 
-// Call the adjustDisplay function on page load
-adjustDisplay();
-
-// Add event listener to window resize to handle changes in screen width
-window.addEventListener("resize", adjustDisplay);
+menu.style.display = "none";

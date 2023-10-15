@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>urCrypto</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   </head>
   <body>
@@ -18,11 +20,12 @@
         <li><a href="">Support</a></li>
       </ul>
       <div>
-      <button id="login">Sign in</button>
-      <button id="register">Get started</button>
+        <button id="login">Sign in</button>
+        <button id="register">Get started</button>
+        <button class="menuBtn">☰</button>
+        <button class="closeBtn">X</button>
+        </div>
       </div>
-      <button class="menuBtn">☰</button>
-    </div>
 </div>
     </nav>
 
@@ -83,9 +86,9 @@
         <h2>The Most Trusted Cryptocurrency Platform</h2>
        
         <div class="benefit">
-          <h3>01</h3>
+          <h4>01</h4>
           <div class="benefitDetails">
-            <h4>Sync between platforms</h4>
+            <h3>Sync between platforms</h3>
             <p>
               No matter if you're using our web interface or mobile app — your
               data is always synced. Just one account for all our services.
@@ -95,19 +98,18 @@
         <hr>
 
         <div class="benefit">
-          <h3>02</h3>
+          <h4>02</h4>
           <div class="benefitDetails">
-            <h4>More focus, less clutter</h4>
+            <h3>More focus, less clutter</h3>
             <p>No ads, just the crypto and content you love.</p>
           </div>
         </div>
-
         <hr>
 
         <div class="benefit">
-          <h3>03</h3>
+          <h4>03</h4>
           <div class="benefitDetails">
-            <h4>Security by default</h4>
+            <h3>Security by default</h3>
             <p>Enable privacy mode and app locking to protect your data.</p>
           </div>
         </div>
@@ -331,6 +333,7 @@
     <!-- CTA -->
 
     <section class="cta container">
+      <div class="test">
       <div class="action">
         <h3>Join a new generation of investors</h3>
         <button id="register2">Get started</button>
@@ -338,6 +341,7 @@
       <img class="lunaImg" src="./images/luna.svg" alt="">
       <img class="btcImg" src="./images/btc.svg" alt="">
       <img class="ethImg" src="./images/eth.svg" alt="">
+    </div>
       </section>
 
     <footer>
@@ -345,16 +349,17 @@
       <div class="socials">
         <img src="./images/CryptoLogo.svg" alt="">
         <p>Take your crypto to the next level</p>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+      </div>
     </div>
 
       <div class="optionsContainer">
         <div class="options">
-            <p>Company</p>
+            <h5>Company</h5>
             <a href="">About us</a>
             <a href="">Blog</a>
             <a href="">Careers</a>
@@ -366,7 +371,7 @@
         </div>
 
         <div class="options">
-            <p>Learn</p>
+            <h5>Learn</h5>
             <a href="">What's Trending</a>
             <a href="">Product News</a>
             <a href="">Events</a>
@@ -376,7 +381,7 @@
         </div>
 
         <div class="options">
-            <p>Products</p>
+            <h5>Products</h5>
             <a href="">Stock & Fund</a>
             <a href="">Cash Card</a>
             <a href="">Crypto</a>
@@ -385,14 +390,14 @@
             <a href="">Learn Snacks</a>
         </div>
         <div class="options">
-            <p>Support</p>
+            <h5>Support</h5>
             <a href="">Support Center</a>
             <a href="">Contact Us</a>
             <a href="">System Status</a>
             <a href="">Areas of Availability</a>
         </div>
         <div class="options">
-            <p>Resources</p>
+            <h5>Resources</h5>
             <a href="">Prices</a>
             <a href="">Sites Widgets</a>
             <a href="">Tax</a>
