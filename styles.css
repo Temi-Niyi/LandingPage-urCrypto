@@ -570,6 +570,9 @@ footer hr {
     gap: 0;
   }
 
+  #menu{
+    display: none;
+  }
   .navMenu li {
     margin-top: -4rem;
     width: 100%;
