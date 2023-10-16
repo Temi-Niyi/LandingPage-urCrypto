@@ -261,6 +261,21 @@ header input[type="submit"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  animation: slideInFromLeft 400ms linear forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start off the screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Slide in from the left */
+  }
+}
+
+.featureImg j{
+
+  animation-delay: 2s;
 }
 
 .featureImg img {
