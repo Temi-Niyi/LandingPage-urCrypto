@@ -18,4 +18,4 @@ const closeNav = () => {
 closeBtn.addEventListener('click', closeNav)
 
 // menuBtn.style.display = "none";
-closeBtn.style.display = "none";
+// closeBtn.style.display = "none";
